@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_sample/controller/count_controller.dart';
 
 class Counterpage extends ConsumerWidget {
+  const Counterpage({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var count = ref.watch(countprovider);
