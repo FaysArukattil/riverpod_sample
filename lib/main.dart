@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_sample/controller/counterpage.dart';
+import 'package:riverpod_sample/views/counterpage.dart';
+import 'package:riverpod_sample/views/productspage.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'RIVER POD SAMPLE',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: Counterpage(),
+      home: Productspage(),
     );
   }
 }
